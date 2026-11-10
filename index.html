@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahmood Abdul Razak, full stack developer in Doha</title>
+<meta name="description" content="Mahmood Abdul Razak builds web apps, internal business systems and AI automation, from first requirement to daily use.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500&family=Atkinson+Hyperlegible+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="container nav__bar">
+    <a class="wordmark" href="#top" aria-label="Mahmood Abdul Razak, back to top">Mahmood Abdul Razak</a>
+    <nav class="nav__links" aria-label="Main">
+      <a class="nav__opt" href="#about">About</a>
+      <a class="nav__opt" href="#work">Work</a>
+      <a class="nav__opt" href="#record">Record</a>
+      <a class="nav__opt" href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__head">
+      <h1 class="display-s">Logistics teams use my software every day.</h1>
+      <div class="hero__side">
+        <p class="lead">Full stack developer in Doha and aspiring Computer Science and Engineering graduate.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="mailto:mahmoodar305@gmail.com">Email me</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panels hero__board">
+      <ul class="index" aria-label="Selected work">
+        <li><a href="#crm">
+          <time class="measured">May to Jul 2026</time>
+          <span class="index__what"><strong>Sales CRM, Aries Global Logistics</strong><span>Used daily by the Qatar, Dubai and MSC desks.</span></span>
+        </a></li>
+        <li><a href="#customs">
+          <time class="measured">May to Jul 2026</time>
+          <span class="index__what"><strong>Al Nadeeb customs service</strong><span>Reads shipping documents, prepares customs declarations.</span></span>
+        </a></li>
+        <li><a href="#apps">
+          <time class="measured">2024 to 2026</time>
+          <span class="index__what"><strong>Four live web apps</strong><span>Built with React and Supabase, deployed on Vercel.</span></span>
+        </a></li>
+        <li><a href="#pipeline">
+          <time class="measured">2026 to now</time>
+          <span class="index__what"><strong>Large-scale data pipeline</strong><span>Final-year project, 0.76 TB through under 2 GB of disk.</span></span>
+        </a></li>
+      </ul>
+
+      <aside class="diff" aria-label="What the Aries sales CRM replaced">
+        <div class="diff__rows">
+          <p class="row--minus"><span class="gutter" aria-hidden="true">-</span><s>Qatar desk tracker</s></p>
+          <p class="row--minus"><span class="gutter" aria-hidden="true">-</span><s>Dubai desk tracker</s></p>
+          <p class="row--minus"><span class="gutter" aria-hidden="true">-</span><s>MSC desk tracker</s></p>
+          <p class="row--plus"><span class="gutter" aria-hidden="true">+</span><strong>One web CRM</strong><span class="measured">~2,540 leads</span></p>
+        </div>
+        <dl class="ledger">
+          <div><dt>Who</dt><dd class="is-person">Mahmood, sole developer</dd></div>
+          <div><dt>When</dt><dd class="is-measured measured">May to Jul 2026</dd></div>
+          <div><dt>Why</dt><dd>Managers had no single view of leads.</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tight" id="about">
+  <div class="container about">
+    <figure class="fig">
+      <div class="shot shot--portrait" data-slot="portrait" data-kind="portrait" data-alt="Portrait of Mahmood"><img src="images/portrait.jpg" width="530" height="662" alt="Mahmood Abdul Razak smiling at a wooden table outdoors in the evening" loading="lazy"></div>
+    </figure>
+    <div class="stack">
+      <h2>From first requirement to daily use</h2>
+      <p class="lead">I turn manual business processes into production software, then deploy, support and improve it.</p>
+      <p>Currently Tech Head of an early-stage startup, managing production of its apps. I work across React, Node.js, Python, PostgreSQL and Docker, and build Android apps in Kotlin.</p>
+    </div>
+  </div>
+</section>
+
+<div id="work">
+<section class="sec" id="crm">
+  <div class="container split">
+    <div class="stack">
+      <h2>One CRM for three sales desks</h2>
+      <p class="lead">Python and Flask, built for Aries Global Logistics in Doha.</p>
+      <dl class="facts">
+        <div><dt>Built</dt><dd>Lead capture, stage tracking, follow-up reminders, exportable reports and a live management dashboard.</dd></div>
+        <div><dt>Migrated</dt><dd>Three trackers into one 36-column database, mismatched columns fixed, duplicates removed.</dd></div>
+        <div><dt>Excel</dt><dd>Two-way sync, so staff keep their spreadsheets.</dd></div>
+        <div><dt>Secured</dt><dd>Named logins, role-based permissions, validation on every entry, soft deletes, a field-level audit trail.</dd></div>
+        <div><dt>Next</dt><dd>Planned the upgrade to FastAPI and PostgreSQL for scale.</dd></div>
+      </dl>
+    </div>
+    <figure class="fig">
+      <div class="shot shot--activity" data-slot="crm-activity" data-kind="product" data-alt="CRM activity log"><img src="images/screens/crm/activity.png" width="2340" height="1120" alt="CRM activity log recording stage changes and field updates with user and time" loading="lazy"></div>
+      <figcaption>Every stage change and field update is logged against a user and a time.</figcaption>
+    </figure>
+  </div>
+  <div class="container crm-full">
+    <figure class="fig">
+      <div class="shot shot--screen" data-slot="crm-dashboard" data-kind="product" data-alt="CRM management dashboard"><img src="images/screens/crm/dashboard.png" width="2880" height="1800" alt="AGL CRM dashboard with pipeline stages, totals and forecast" loading="lazy"></div>
+      <figcaption>The real CRM, run with sample leads. Client records stay private. <a href="images/screens/crm/dashboard.png">Open full size</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec sec--tight" id="customs">
+  <div class="container">
+    <div class="head-split">
+      <h2>Customs paperwork, read and checked</h2>
+      <p class="lead">Al Nadeeb prepares Qatar Customs declarations, built on Node.js, Express and Playwright.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Read</h3><p>The Gemini API reads invoices, bills of lading and packing lists.</p></li>
+      <li><h3>Match</h3><p>Each item is scored against 13,413 Qatar Customs HS codes, and mismatches are flagged.</p></li>
+      <li><h3>Review</h3><p>Operators correct every AI result before submission, watching job progress live.</p></li>
+      <li><h3>Fill</h3><p>A bookmarklet fills the portal form. Playwright collects duty rates, cached 3 days to limit load on the government site.</p></li>
+    </ol>
+    <figure class="fig">
+      <div class="shot shot--crop" data-slot="nadeeb-mismatch" data-kind="product" data-alt="Al Nadeeb flagging an HS code mismatch"><img src="images/screens/nadeeb/mismatch.png" width="2072" height="1110" alt="Al Nadeeb flags a stated HS code that does not match the sample item, beside the extracted fields and best match" loading="lazy"></div>
+      <figcaption>The running tool, loaded with a sample shipment. Real declarations stay private. <a href="images/screens/nadeeb/mismatch.png">Open full size</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="apps">
+  <div class="container">
+    <div class="head-split">
+      <h2>Live apps you can open now</h2>
+      <p class="lead">React, Supabase and Vercel on the web. Kotlin and Firebase on Android.</p>
+    </div>
+    <div class="switch" data-switch>
+      <div class="tabs" role="tablist" aria-label="Live web apps">
+        <button type="button" role="tab" id="t1" aria-controls="p1" aria-selected="true">Hasbi</button>
+        <button type="button" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">CoachQuest</button>
+        <button type="button" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Career Assessment</button>
+      </div>
+      <section class="app" role="tabpanel" id="p1" aria-labelledby="t1">
+        <figure class="fig"><div class="shot shot--screen" data-slot="app-hasbi" data-kind="product" data-alt="Hasbi Family Platform home screen"><img src="images/screens/hasbi/screen-home-desktop.png" width="2880" height="1800" alt="Home page of the Hasbi Family Platform" loading="lazy"></div></figure>
+        <div class="app__text"><h3>Hasbi Family Platform</h3><p>Designed, built and launched: a family tree, a cloud photo gallery and secure role-based access.</p><a href="https://hasbi-website-beta.vercel.app">Open Hasbi</a></div>
+      </section>
+      <section class="app" role="tabpanel" id="p2" aria-labelledby="t2">
+        <figure class="fig"><div class="shot shot--screen" data-slot="app-coachquest" data-kind="product" data-alt="CoachQuest home screen"><img src="images/screens/coachquest/screen-home-desktop.png" width="2880" height="1800" alt="CoachQuest landing page" loading="lazy"></div></figure>
+        <div class="app__text"><h3>CoachQuest</h3><p>Adds points, streaks, levels and leaderboards to coaching programs.</p><a href="https://coachquest.trialpath.org">Open CoachQuest</a></div>
+      </section>
+      <section class="app" role="tabpanel" id="p3" aria-labelledby="t3">
+        <figure class="fig"><div class="shot shot--screen" data-slot="app-career" data-kind="product" data-alt="Career Assessment home screen"><img src="images/screens/career/screen-home-desktop.png" width="2880" height="1800" alt="Career Assessment landing page with plans and a sample tax invoice" loading="lazy"></div></figure>
+        <div class="app__text"><h3>Career Assessment</h3><p>An aptitude and career assessment for students, with a PDF report.</p><a href="https://career-assessment-pay.vercel.app/">Open Career Assessment</a></div>
+      </section>
+    </div>
+    <ul class="rows">
+      <li><h3>Company forms</h3><p>Invite-only form app with an admin area. <a href="https://company-forms-nine.vercel.app">Open company forms</a></p></li>
+      <li><h3>SARS</h3><p>Android app for reporting stray animals for rescue, with GPS-tagged reports and a Firebase back end.</p></li>
+      <li><h3>WatchNav</h3><p>Android app that sends phone navigation to a smartwatch over Bluetooth LE.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec sec--tint" id="pipeline">
+  <div class="container split split--even">
+    <div class="stack">
+      <h2>A dataset bigger than its disk</h2>
+      <p class="reading reading--big">0.76 TB</p>
+      <p class="lead">Streamed in Python through under 2 GB of disk, with zero failures. Final-year project, 2026 to now.</p>
+    </div>
+    <div class="panels readings">
+      <div><p class="reading">26&times;</p><p>Parallel downloader against a normal download.</p></div>
+      <div><p class="reading">7</p><p>Automated checks, which caught four hidden bugs early.</p></div>
+      <div class="wide"><p class="reading">0.995</p><p>Model AUC on CAMELYON16.</p></div>
+      <div class="wide wide--note"><p>Every result is logged with its exact code version, for reproducibility.</p></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="sec" id="record">
+  <div class="container">
+    <h2>The record, newest first</h2>
+    <div class="record">
+      <ol class="trail">
+        <li><span class="measured is-measured">Now</span><div><h3>Tech Head, founding team</h3><p class="org">Cyphyx, early-stage technology startup</p><p>Lead the technical side of the founding team and manage production of the company’s apps, from build through release.</p></div></li>
+        <li><time class="measured is-measured" datetime="2026-10-31">31 Oct 2026</time><div><h3>Google AI Professional Certificate</h3><p class="org">Google, on Coursera</p><p><a href="https://www.coursera.org/verify/professional-cert/LVQCLH0WIT5D">Verify this certificate</a></p></div></li>
+        <li><time class="measured is-measured" datetime="2026-10-03">3 Oct 2026</time><div><h3>Google AI Essentials Specialization</h3><p class="org">Google, on Coursera</p><p><a href="https://www.coursera.org/verify/specialization/C9S834R370VP">Verify this specialization</a></p></div></li>
+        <li><span class="measured is-measured">May to Jul 2026</span><div><h3>Software Engineer Intern</h3><p class="org">Aries Global Logistics, Doha</p><p>Built, deployed and supported the CRM and customs service, working directly with sales and operations staff.</p></div></li>
+        <li><span class="measured is-measured">Jun to Jul 2025</span><div><h3>IT Intern</h3><p class="org">Ncell (Axiata Group), Nepal</p><p>Built live Grafana dashboards, improved Prometheus alerting and ELK logging, and containerised log pipelines with Docker in a production network.</p></div></li>
+        <li><span class="measured is-measured">Jun to Jul 2024</span><div><h3>Web Development Intern</h3><p class="org">TS Qatar, Doha</p><p>Internship covering HTML, CSS, JavaScript, SASS and React.</p></div></li>
+        <li><span class="measured is-measured">2023 to 2027</span><div><h3>B.Tech, Computer Science and Engineering</h3><p class="org">TKM College of Engineering, Kollam (KTU)</p><p>Expected 2027.</p></div></li>
+      </ol>
+      <div class="aside-list">
+        <div><h3>Also certified</h3><ul><li>Google Analytics Certification</li><li>Dart Programming Certificate</li></ul></div>
+        <div><h3>Leadership</h3><ul><li>Web Development Head, FOSS Club, TKMCE</li><li>Executive Committee Member, Google Developer Group and FOSS, TKMCE</li><li>School Leader, Rajagiri Public School, Doha (Leadership Honors)</li><li>Secretary, Mathematics Club, Gurukula Public School</li></ul></div>
+        <div><h3>Languages</h3><ul><li>English, fluent</li><li>Arabic, working proficiency</li><li>Malayalam, native</li><li>Hindi, fluent</li></ul></div>
+        <div><h3>School</h3><ul><li>Higher Secondary, Gurukula Public School, India</li><li>Secondary, Rajagiri Public School, Doha</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tight" id="skills">
+  <div class="container">
+    <div class="head-split">
+      <h2>The stack behind these systems</h2>
+      <p class="lead">Claude Code daily, with every generated change reviewed and tested before it ships.</p>
+    </div>
+    <table class="skills">
+      <tbody>
+        <tr><th scope="row">Languages</th><td>JavaScript, Python, SQL, Kotlin, Dart, HTML5, CSS3</td></tr>
+        <tr><th scope="row">Front end</th><td>React, Vite, responsive component-based UI, REST API integration, forms and dashboards</td></tr>
+        <tr><th scope="row">Back end</th><td>Node.js, Express, Flask, FastAPI, REST APIs, authentication, role-based permissions, background jobs, caching</td></tr>
+        <tr><th scope="row">Databases</th><td>PostgreSQL, Supabase, Firebase, data modelling, data migration, cleansing and de-duplication</td></tr>
+        <tr><th scope="row">Mobile</th><td>Android in Kotlin, Firebase back end, GPS and Bluetooth LE features, Dart</td></tr>
+        <tr><th scope="row">Integrations</th><td>Gemini API, Playwright portal automation, two-way Excel sync, third-party APIs</td></tr>
+        <tr><th scope="row">DevOps</th><td>Git and GitHub, GitHub Actions, Docker, Linux, Vercel, Grafana, Prometheus, ELK</td></tr>
+        <tr><th scope="row">AI-assisted</th><td>Claude Code, prompt engineering, local models with Ollama, small verifiable changes</td></tr>
+        <tr><th scope="row">Security</th><td>Authentication, role-based access control, input validation, audit trails, soft deletes, human review of AI output</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="container split split--contact">
+    <div class="stack">
+      <h2>Based in Doha, available on-site.</h2>
+      <p class="lead">Email or message me on LinkedIn.</p>
+    </div>
+    <dl class="contact">
+      <div><dt>Email</dt><dd><a href="mailto:mahmoodar305@gmail.com">mahmoodar305@gmail.com</a></dd></div>
+      <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/mahmood-abdul-razak-a044a8321">mahmood-abdul-razak</a></dd></div>
+      <div><dt>GitHub</dt><dd><a href="https://github.com/mahme05">mahme05</a></dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p>Mahmood Abdul Razak, Doha, Qatar. Screens are captured from the running apps, with sample data on the Aries systems. Most source code is private, so demos are available on request.</p>
+  </div>
+</footer>
+
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });
+document.querySelectorAll('[data-switch]').forEach((root) => {
+  const tabs = [...root.querySelectorAll('[role=tab]')];
+  const show = (tab, focus) => {
+    tabs.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => show(t));
+    t.addEventListener('keydown', (e) => {
+      const d = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+      if (d) { e.preventDefault(); show(tabs[(i + d + tabs.length) % tabs.length], true); }
+    });
+  });
+  show(tabs[0]);
+});</script>
+</body>
+</html>
