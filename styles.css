@@ -71,6 +71,7 @@ html:not(.js) .icon-btn { display: none; }
 .portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-card); }
 .bubble { position: absolute; left: calc(-1 * var(--space-lg)); top: var(--space-xl); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-control); background: var(--color-marker); color: var(--color-marker-ink); font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; }
 .bubble::after { content: ""; position: absolute; right: var(--space-lg); bottom: -10px; width: 20px; height: 12px; background: var(--color-marker); clip-path: polygon(0 0, 100% 0, 70% 100%); }
+.hl { padding: 0 0.14em; border-radius: 0.12em; background: var(--color-marker); color: var(--color-marker-ink); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .about__text { display: grid; gap: var(--space-lg); }
 .about__text p:not(.lead) { color: var(--color-ink-2); max-width: 60ch; }
 
