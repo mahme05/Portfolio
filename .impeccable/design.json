@@ -1,0 +1,805 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T16:54:35.462353+00:00",
+  "title": "Design System: Mahmood Abdul Razak Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "action-light": {
+        "role": "primary",
+        "displayName": "Booklet Navy",
+        "canonical": "#1a3a73",
+        "mode": "light",
+        "token": "--color-action",
+        "tonalRamp": [
+          "#010921",
+          "#072251",
+          "#1f4079",
+          "#3e609d",
+          "#5e82c1",
+          "#82a6e3",
+          "#b4caf0",
+          "#e8effb"
+        ]
+      },
+      "action-dark": {
+        "role": "primary",
+        "displayName": "Soft Coral",
+        "canonical": "#ff8f7a",
+        "mode": "dark",
+        "token": "--color-action",
+        "tonalRamp": [
+          "#1e0000",
+          "#4b0600",
+          "#7b1404",
+          "#a13b2a",
+          "#c85e4b",
+          "#eb8471",
+          "#f7b7aa",
+          "#fee9e5"
+        ]
+      },
+      "action-ink-light": {
+        "role": "primary",
+        "displayName": "White on Navy",
+        "canonical": "#ffffff",
+        "mode": "light",
+        "token": "--color-action-ink",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "action-ink-dark": {
+        "role": "primary",
+        "displayName": "Navy on Coral",
+        "canonical": "#14233b",
+        "mode": "dark",
+        "token": "--color-action-ink",
+        "tonalRamp": [
+          "#050b16",
+          "#18253a",
+          "#32425d",
+          "#50627e",
+          "#7183a1",
+          "#94a6c3",
+          "#bfcadb",
+          "#ebeff4"
+        ]
+      },
+      "action-hover-light": {
+        "role": "primary",
+        "displayName": "Tomato Hover",
+        "canonical": "#c8351f",
+        "mode": "light",
+        "token": "--color-action-hover",
+        "tonalRamp": [
+          "#1e0100",
+          "#4b0600",
+          "#7d0f00",
+          "#b31c03",
+          "#dc4932",
+          "#ff745d",
+          "#feb4a5",
+          "#fee9e5"
+        ]
+      },
+      "action-hover-dark": {
+        "role": "primary",
+        "displayName": "White Hover",
+        "canonical": "#ffffff",
+        "mode": "dark",
+        "token": "--color-action-hover",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "focus-light": {
+        "role": "primary",
+        "displayName": "Navy Focus",
+        "canonical": "#1a3a73",
+        "mode": "light",
+        "token": "--color-focus",
+        "tonalRamp": [
+          "#010921",
+          "#072251",
+          "#1f4079",
+          "#3e609d",
+          "#5e82c1",
+          "#82a6e3",
+          "#b4caf0",
+          "#e8effb"
+        ]
+      },
+      "focus-dark": {
+        "role": "primary",
+        "displayName": "Coral Focus",
+        "canonical": "#ff8f7a",
+        "mode": "dark",
+        "token": "--color-focus",
+        "tonalRamp": [
+          "#1e0000",
+          "#4b0600",
+          "#7b1404",
+          "#a13b2a",
+          "#c85e4b",
+          "#eb8471",
+          "#f7b7aa",
+          "#fee9e5"
+        ]
+      },
+      "marker-light": {
+        "role": "primary",
+        "displayName": "Navy Marker",
+        "canonical": "#1a3a73",
+        "mode": "light",
+        "token": "--color-marker",
+        "tonalRamp": [
+          "#010921",
+          "#072251",
+          "#1f4079",
+          "#3e609d",
+          "#5e82c1",
+          "#82a6e3",
+          "#b4caf0",
+          "#e8effb"
+        ]
+      },
+      "marker-dark": {
+        "role": "primary",
+        "displayName": "Coral Marker",
+        "canonical": "#ff8f7a",
+        "mode": "dark",
+        "token": "--color-marker",
+        "tonalRamp": [
+          "#1e0000",
+          "#4b0600",
+          "#7b1404",
+          "#a13b2a",
+          "#c85e4b",
+          "#eb8471",
+          "#f7b7aa",
+          "#fee9e5"
+        ]
+      },
+      "marker-ink-light": {
+        "role": "primary",
+        "displayName": "White on Marker",
+        "canonical": "#ffffff",
+        "mode": "light",
+        "token": "--color-marker-ink",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "marker-ink-dark": {
+        "role": "primary",
+        "displayName": "Navy on Marker",
+        "canonical": "#14233b",
+        "mode": "dark",
+        "token": "--color-marker-ink",
+        "tonalRamp": [
+          "#050b16",
+          "#18253a",
+          "#32425d",
+          "#50627e",
+          "#7183a1",
+          "#94a6c3",
+          "#bfcadb",
+          "#ebeff4"
+        ]
+      },
+      "signal-light": {
+        "role": "secondary",
+        "displayName": "Tomato",
+        "canonical": "#c8351f",
+        "mode": "light",
+        "token": "--color-signal",
+        "tonalRamp": [
+          "#1e0100",
+          "#4b0600",
+          "#7d0f00",
+          "#b31c03",
+          "#dc4932",
+          "#ff745d",
+          "#feb4a5",
+          "#fee9e5"
+        ]
+      },
+      "signal-dark": {
+        "role": "secondary",
+        "displayName": "Soft Coral Signal",
+        "canonical": "#ff8f7a",
+        "mode": "dark",
+        "token": "--color-signal",
+        "tonalRamp": [
+          "#1e0000",
+          "#4b0600",
+          "#7b1404",
+          "#a13b2a",
+          "#c85e4b",
+          "#eb8471",
+          "#f7b7aa",
+          "#fee9e5"
+        ]
+      },
+      "field-light": {
+        "role": "tertiary",
+        "displayName": "Sky Cover",
+        "canonical": "#cfe3f6",
+        "mode": "light",
+        "token": "--color-field",
+        "tonalRamp": [
+          "#060c12",
+          "#192633",
+          "#334453",
+          "#526374",
+          "#728596",
+          "#96a7b8",
+          "#c0cbd5",
+          "#ebeff2"
+        ]
+      },
+      "field-dark": {
+        "role": "tertiary",
+        "displayName": "Deep Navy Cover",
+        "canonical": "#1d3a6e",
+        "mode": "dark",
+        "token": "--color-field",
+        "tonalRamp": [
+          "#020a1f",
+          "#0b224e",
+          "#234075",
+          "#416198",
+          "#6182bc",
+          "#85a6de",
+          "#b6caec",
+          "#e8effa"
+        ]
+      },
+      "on-field-light": {
+        "role": "tertiary",
+        "displayName": "Cover Ink",
+        "canonical": "#14233b",
+        "mode": "light",
+        "token": "--color-on-field",
+        "tonalRamp": [
+          "#050b16",
+          "#18253a",
+          "#32425d",
+          "#50627e",
+          "#7183a1",
+          "#94a6c3",
+          "#bfcadb",
+          "#ebeff4"
+        ]
+      },
+      "on-field-dark": {
+        "role": "tertiary",
+        "displayName": "Cover White",
+        "canonical": "#ffffff",
+        "mode": "dark",
+        "token": "--color-on-field",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "on-field-2-light": {
+        "role": "tertiary",
+        "displayName": "Cover Ink Soft",
+        "canonical": "#14233b",
+        "mode": "light",
+        "token": "--color-on-field-2",
+        "tonalRamp": [
+          "#050b16",
+          "#18253a",
+          "#32425d",
+          "#50627e",
+          "#7183a1",
+          "#94a6c3",
+          "#bfcadb",
+          "#ebeff4"
+        ]
+      },
+      "on-field-2-dark": {
+        "role": "tertiary",
+        "displayName": "Cover Mist",
+        "canonical": "#dfe8f5",
+        "mode": "dark",
+        "token": "--color-on-field-2",
+        "tonalRamp": [
+          "#090b0f",
+          "#20252e",
+          "#3b434d",
+          "#5a626d",
+          "#7b838f",
+          "#9ea6b1",
+          "#c5c9d0",
+          "#edeef1"
+        ]
+      },
+      "page-light": {
+        "role": "neutral",
+        "displayName": "White Page",
+        "canonical": "#ffffff",
+        "mode": "light",
+        "token": "--color-page",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "page-dark": {
+        "role": "neutral",
+        "displayName": "Night Page",
+        "canonical": "#0f1726",
+        "mode": "dark",
+        "token": "--color-page",
+        "tonalRamp": [
+          "#080b12",
+          "#1e2533",
+          "#394254",
+          "#576274",
+          "#788396",
+          "#9ba6b9",
+          "#c3c9d5",
+          "#eceef2"
+        ]
+      },
+      "card-light": {
+        "role": "neutral",
+        "displayName": "White Card",
+        "canonical": "#ffffff",
+        "mode": "light",
+        "token": "--color-card",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "card-dark": {
+        "role": "neutral",
+        "displayName": "Deep Card",
+        "canonical": "#1a2539",
+        "mode": "dark",
+        "token": "--color-card",
+        "tonalRamp": [
+          "#070b14",
+          "#1b2537",
+          "#364258",
+          "#556279",
+          "#75839b",
+          "#98a6bd",
+          "#c1cad8",
+          "#eceff3"
+        ]
+      },
+      "panel-light": {
+        "role": "neutral",
+        "displayName": "Pale Blue Panel",
+        "canonical": "#eaf2fa",
+        "mode": "light",
+        "token": "--color-panel",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262b",
+          "#3c4349",
+          "#5b6269",
+          "#7c838a",
+          "#9fa6ad",
+          "#c5cace",
+          "#edeff0"
+        ]
+      },
+      "panel-dark": {
+        "role": "neutral",
+        "displayName": "Navy Panel",
+        "canonical": "#1c2a42",
+        "mode": "dark",
+        "token": "--color-panel",
+        "tonalRamp": [
+          "#060b15",
+          "#19253a",
+          "#33425c",
+          "#52627d",
+          "#7283a0",
+          "#95a6c2",
+          "#c0cadb",
+          "#ebeff4"
+        ]
+      },
+      "line-light": {
+        "role": "neutral",
+        "displayName": "Soft Rule",
+        "canonical": "#d6e0ea",
+        "mode": "light",
+        "token": "--color-line",
+        "tonalRamp": [
+          "#080c0f",
+          "#1f262c",
+          "#3b434b",
+          "#5a626b",
+          "#7a838d",
+          "#9da6af",
+          "#c4cacf",
+          "#edeff0"
+        ]
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Slate Rule",
+        "canonical": "#33435f",
+        "mode": "dark",
+        "token": "--color-line",
+        "tonalRamp": [
+          "#060b16",
+          "#18253b",
+          "#32425e",
+          "#51627f",
+          "#7183a2",
+          "#94a6c4",
+          "#bfcadc",
+          "#ebeff4"
+        ]
+      },
+      "ink-light": {
+        "role": "neutral",
+        "displayName": "Navy Ink",
+        "canonical": "#14233b",
+        "mode": "light",
+        "token": "--color-ink",
+        "tonalRamp": [
+          "#050b16",
+          "#18253a",
+          "#32425d",
+          "#50627e",
+          "#7183a1",
+          "#94a6c3",
+          "#bfcadb",
+          "#ebeff4"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Cool White Ink",
+        "canonical": "#f2f5fa",
+        "mode": "dark",
+        "token": "--color-ink",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#404246",
+          "#5f6166",
+          "#808287",
+          "#a2a5a9",
+          "#c8c9cc",
+          "#eeeeef"
+        ]
+      },
+      "ink-2-light": {
+        "role": "neutral",
+        "displayName": "Body Navy",
+        "canonical": "#3a4a61",
+        "mode": "light",
+        "token": "--color-ink-2",
+        "tonalRamp": [
+          "#060b14",
+          "#192638",
+          "#334359",
+          "#52627a",
+          "#72849d",
+          "#95a6bf",
+          "#c0cad9",
+          "#ebeff3"
+        ]
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Mist Ink",
+        "canonical": "#c8d2e2",
+        "mode": "dark",
+        "token": "--color-ink-2",
+        "tonalRamp": [
+          "#080b10",
+          "#1f2530",
+          "#3a424f",
+          "#596270",
+          "#7a8392",
+          "#9da6b4",
+          "#c4c9d2",
+          "#edeef1"
+        ]
+      },
+      "muted-light": {
+        "role": "neutral",
+        "displayName": "Slate Note",
+        "canonical": "#56657b",
+        "mode": "light",
+        "token": "--color-muted",
+        "tonalRamp": [
+          "#060b14",
+          "#1a2636",
+          "#354357",
+          "#536278",
+          "#74839b",
+          "#97a6bd",
+          "#c1cad8",
+          "#eceff3"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Haze Note",
+        "canonical": "#9dabc2",
+        "mode": "dark",
+        "token": "--color-muted",
+        "tonalRamp": [
+          "#070b13",
+          "#1c2535",
+          "#374256",
+          "#556277",
+          "#768399",
+          "#99a6bb",
+          "#c2cad7",
+          "#eceff3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "The large tomato build number that heads each build."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "The cover headline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Automatic step numbers inside panels."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step and item headings."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Panel headings, tool chips, contact values."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Buttons, speech bubble and small sub-headings."
+      },
+      "mark": {
+        "displayName": "Mark",
+        "purpose": "Quantity marks in tomato, such as a count with a multiplication sign."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Opening sentences, capped at 34 to 46ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, capped at 60 to 70ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, captions, stack lines, chips and dates."
+      },
+      "folio": {
+        "displayName": "Folio",
+        "purpose": "Tabular page numbers in the section corner."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Every state and assembly transition."
+      },
+      {
+        "name": "dur-micro",
+        "value": "120ms",
+        "purpose": "Button press."
+      },
+      {
+        "name": "dur-short",
+        "value": "220ms",
+        "purpose": "Hover colour, menu entry, theme change."
+      },
+      {
+        "name": "dur-long",
+        "value": "560ms",
+        "purpose": "Parts snapping together in the assembly figure."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "60rem"
+      },
+      {
+        "name": "phone",
+        "value": "40rem"
+      },
+      {
+        "name": "narrow",
+        "value": "23rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action, such as making contact.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Email me</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:52px;padding:0 var(--space-lg);border:var(--rule) solid currentColor;border-radius:var(--radius-control);font-family:var(--font-display);font-size:var(--text-lg);font-weight:700;text-decoration:none;cursor:pointer;transition:background-color var(--dur-short) var(--ease-out),border-color var(--dur-short) var(--ease-out),color var(--dur-short) var(--ease-out),transform var(--dur-micro) var(--ease-out);background:var(--color-action);border-color:var(--color-action);color:var(--color-action-ink);}.ds-btn-primary:hover{background:var(--color-action-hover);border-color:var(--color-action-hover);}.ds-btn-primary:active{transform:translateY(1px);}.ds-btn-primary:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px;}"
+    },
+    {
+      "name": "Secondary Button on Field",
+      "kind": "button",
+      "refersTo": "button-secondary-on-field",
+      "description": "A 1.5px stroked button for covers.",
+      "html": "<div class=\"ds-field\"><a class=\"ds-btn-secondary\" href=\"#\">Download CV</a></div>",
+      "css": ".ds-field{background:var(--color-field);padding:var(--space-lg);}.ds-btn-secondary{display:inline-flex;align-items:center;min-height:52px;padding:0 var(--space-lg);border:var(--rule) solid currentColor;border-radius:var(--radius-control);font-family:var(--font-display);font-size:var(--text-lg);font-weight:700;text-decoration:none;cursor:pointer;transition:background-color var(--dur-short) var(--ease-out),border-color var(--dur-short) var(--ease-out),color var(--dur-short) var(--ease-out),transform var(--dur-micro) var(--ease-out);color:var(--color-on-field);}.ds-btn-secondary:hover{background:var(--color-action);border-color:var(--color-action);color:var(--color-action-ink);}.ds-btn-secondary:active{transform:translateY(1px);}.ds-btn-secondary:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px;}"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "description": "Flat bar with a rule beneath, links and a two-state theme toggle.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-wordmark\" href=\"#\">Wordmark</a><nav class=\"ds-links\"><a href=\"#\">Work</a><a href=\"#\">Contact</a><button class=\"ds-icon\" type=\"button\" aria-label=\"Switch to dark mode\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M2 12h2M20 12h2\"/></svg></button></nav></header>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:var(--space-lg);min-height:var(--nav-h);padding-inline:var(--space-lg);background:var(--color-page);color:var(--color-ink);border-bottom:var(--rule) solid var(--color-line);}.ds-wordmark{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;letter-spacing:-0.01em;text-decoration:none;color:inherit;}.ds-links{display:flex;align-items:center;gap:var(--space-lg);}.ds-links a{display:inline-flex;align-items:center;min-height:44px;font-weight:500;color:var(--color-ink-2);text-decoration:none;transition:color var(--dur-short) var(--ease-out);}.ds-links a:hover,.ds-icon:hover{color:var(--color-signal);}.ds-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;min-height:44px;border:0;background:transparent;color:var(--color-ink-2);cursor:pointer;}.ds-links a:focus-visible,.ds-icon:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px;}"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "refersTo": "status-chip",
+      "description": "States whether a build is live or in use.",
+      "html": "<span class=\"ds-status\">In daily use</span>",
+      "css": ".ds-status{padding:var(--space-2xs) var(--space-sm);border-radius:var(--radius-chip);background:var(--color-panel);color:var(--color-ink);font-size:var(--text-md);font-weight:600;}"
+    },
+    {
+      "name": "In This Box Parts List",
+      "kind": "custom",
+      "refersTo": "box-panel",
+      "description": "Signature index: a piece count and quantity rows that link to sections.",
+      "html": "<nav class=\"ds-box\"><div class=\"ds-box-head\"><h2>In this box</h2><span>6 pieces</span></div><ul><li><a href=\"#\"><span class=\"ds-qty\">4×</span><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20\"/></svg><span>Live web apps</span></a></li><li><a href=\"#\"><span class=\"ds-qty\">2×</span><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20\"/></svg><span>Android apps</span></a></li></ul></nav>",
+      "css": ".ds-box{background:var(--color-page);color:var(--color-ink);border-radius:var(--radius-card);padding:var(--space-lg);}.ds-box-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-md);padding-bottom:var(--space-sm);border-bottom:var(--rule) solid var(--color-line);}.ds-box-head h2{margin:0;font-family:var(--font-display);font-size:var(--text-xl);font-weight:700;letter-spacing:-0.01em;}.ds-box-head span{font-weight:600;color:var(--color-muted);}.ds-box ul{list-style:none;margin:0;padding:0;}.ds-box li+li{border-top:var(--rule) solid var(--color-line);}.ds-box a{display:grid;grid-template-columns:2.75rem 24px minmax(0,1fr);align-items:center;gap:var(--space-sm);min-height:56px;color:inherit;text-decoration:none;font-weight:500;transition:color var(--dur-short) var(--ease-out);}.ds-box a:hover{color:var(--color-signal);}.ds-box a:focus-visible{outline:2px solid var(--color-focus);outline-offset:-2px;}.ds-box svg{color:var(--color-signal);}.ds-qty{font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;font-variant-numeric:tabular-nums;}"
+    },
+    {
+      "name": "Step Panel",
+      "kind": "card",
+      "refersTo": "step-panel",
+      "description": "A numbered sub-assembly with a heading and quantity mark.",
+      "html": "<ol class=\"ds-steps\"><li class=\"ds-step\"><h3>Fit the parts</h3><p class=\"ds-mark\">1× dashboard</p><p>Short description of the step.</p></li></ol>",
+      "css": ".ds-steps{counter-reset:ds-step;list-style:none;margin:0;padding:0;}.ds-step{counter-increment:ds-step;display:grid;gap:var(--space-sm);padding:var(--space-lg);border-radius:var(--radius-card);background:var(--color-panel);color:var(--color-ink);}.ds-step::before{content:counter(ds-step);font-family:var(--font-display);font-size:var(--text-figure);font-weight:800;line-height:1;}.ds-step h3{margin:0;font-family:var(--font-display);font-size:var(--text-title);font-weight:700;line-height:1.2;letter-spacing:-0.015em;}.ds-step p{margin:0;color:var(--color-ink-2);}.ds-step .ds-mark{font-family:var(--font-display);font-size:var(--text-lg);font-weight:800;color:var(--color-signal);}"
+    },
+    {
+      "name": "Assembly Figure",
+      "kind": "custom",
+      "refersTo": "assembled-result",
+      "description": "Stacked parts, an arrow, and the assembled result.",
+      "html": "<figure class=\"ds-assemble\"><ul class=\"ds-parts\"><li>Part one</li><li>Part two</li><li>Part three</li></ul><span class=\"ds-arrow\"><svg width=\"72\" height=\"40\" viewBox=\"0 0 72 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 20h60M48 5l16 15-16 15\"/></svg></span><div class=\"ds-result\"><strong>One system</strong><span>assembled</span></div></figure>",
+      "css": ".ds-assemble{margin:0;display:grid;grid-template-columns:minmax(0,1fr) 72px minmax(0,1.1fr);align-items:center;gap:var(--space-md);}.ds-parts{list-style:none;margin:0;padding:0;}.ds-parts li{padding:var(--space-xs) var(--space-sm);background:var(--color-card);color:var(--color-ink);font-weight:500;border-bottom:var(--rule) solid var(--color-line);}.ds-parts li:first-child{border-radius:var(--radius-chip) var(--radius-chip) 0 0;}.ds-parts li:last-child{border-radius:0 0 var(--radius-chip) var(--radius-chip);border-bottom:0;}.ds-arrow{color:var(--color-signal);}.ds-result{display:grid;gap:var(--space-2xs);padding:var(--space-lg);border-radius:var(--radius-card);background:var(--color-marker);color:var(--color-marker-ink);}.ds-result strong{font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;line-height:1.1;}"
+    },
+    {
+      "name": "Pointer Callout",
+      "kind": "custom",
+      "refersTo": "callout",
+      "description": "A label with a triangular pointer, set above a finished image.",
+      "html": "<p class=\"ds-callout\">Follow-up reminders</p>",
+      "css": ".ds-callout{position:relative;display:inline-block;margin:0;padding:var(--space-xs) var(--space-md);border-radius:var(--radius-chip);background:var(--color-panel);color:var(--color-ink);font-weight:600;}.ds-callout::after{content:\"\";position:absolute;left:var(--space-lg);bottom:-10px;width:18px;height:11px;background:var(--color-panel);clip-path:polygon(0 0,100% 0,50% 100%);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Build Instructions Booklet",
+    "overview": "**Creative North Star: \"The Build Instructions Booklet\"**\n\nThe system reads like the friendly booklet folded inside a flat-pack box. A coloured cover opens and closes the document, white pages sit between, and the content is organised the way assembly instructions are: a parts list with quantities, large step numerals, callouts with pointers, the finished build shown large, and a folio in the corner of every page. It is clean and professional, with enough play in its rounded type and snapping parts to feel made by a person.\n\nColour is flat and structural. Pale blue sub-assembly panels group the steps on white, navy carries ink and action, and tomato is kept for the things a booklet would mark in red: arrows, numerals and links. Dark mode is the same booklet printed on deep navy, with soft coral as its single accent. Depth comes only from tonal layers and 1.5px rules.\n\nThe system refuses the developer-terminal look, the warm editorial page, and the hero followed by interchangeable feature cards. Density is comfortable and sections are long, with 96px of vertical air on desktop.",
+    "keyCharacteristics": [
+      "Sky blue covers front and back, deep navy in dark mode.",
+      "Rounded Gabarito at weights 700 and 800 for everything structural, Figtree for reading.",
+      "Booklet devices: quantity marks, step numerals, pointer callouts, folios.",
+      "Flat surfaces with no shadows, separated by tone and 1.5px rules.",
+      "Light and dark modes from one token set, defaulting to the device."
+    ],
+    "rules": [
+      {
+        "name": "The Never Yellow Rule",
+        "body": "Yellow is banned from the palette in both modes. The user rejected it as too bright; the booklet's warmth comes from tomato alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tomato Off The Field Rule",
+        "body": "Never set tomato directly on the light sky field, where it falls to 4.01:1. Field text uses cover ink, and interactive tomato stays on white panels.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Source Rule",
+        "body": "Every colour lives in the token file, and stylesheets and markup carry none of their own. A new colour is a new token with a light and a dark value, or it does not ship.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Monospace Rule",
+        "body": "Monospace never appears, including for code names, dates and figures. Columns of numbers use tabular numerals from Gabarito or Figtree.",
+        "section": "typography"
+      },
+      {
+        "name": "The Numeral Leads Rule",
+        "body": "A build or step is identified by a large numeral in Gabarito, generated in order, before any heading competes with it.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Shadow Rule",
+        "body": "No box, text or filter shadow on any element, at rest or in any state.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hairline Only Rule",
+        "body": "Strokes stop at the 1.5px rule weight. Panels and cards carry no outline; only the secondary button and dividing rules draw a line. Drawn assembly arrows are illustration, not outlines.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do take every colour from the token file, with both a light and a dark value.",
+      "Do default to the device colour scheme, keep a stored choice once made, and offer exactly two toggle states, light and dark.",
+      "Do build new sections from booklet devices: quantity marks, numbered steps, pointer callouts and folios.",
+      "Do group content with tone and 1.5px rules.",
+      "Do keep tap targets at 44px or more, a 2px visible focus ring, and a finished static state under reduced motion.",
+      "Do treat SBB's design system as method only: tokens as the single source of truth, with consistent, accessible components."
+    ],
+    "donts": [
+      "Don't use yellow in any mode, surface or accent. It was rejected as too bright.",
+      "Don't use monospace type anywhere.",
+      "Don't add shadows of any kind.",
+      "Don't use heavy outlines, or outline a panel or card. The 1.5px rule and secondary button stroke are the limit.",
+      "Don't add a third system option to the theme toggle.",
+      "Don't use SBB's look, logo, name or font.",
+      "Don't set tomato directly on the light sky field.",
+      "Don't open a section with a hero and a row of interchangeable feature cards. Multi-column panels here are numbered steps or lettered models."
+    ]
+  }
+}
