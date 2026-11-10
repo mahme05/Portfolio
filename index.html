@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script>document.documentElement.classList.add('js');</script>
+<script>(function () { var r = document.documentElement, t = null; try { t = localStorage.getItem('theme'); } catch (e) {} r.dataset.theme = (t === 'light' || t === 'dark') ? t : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'); r.classList.add('js'); })();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500&family=Atkinson+Hyperlegible+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,13 +27,20 @@
 <header class="nav">
   <div class="container nav__bar">
     <a class="wordmark" href="#top" aria-label="Mahmood Abdul Razak, back to top">Mahmood Abdul Razak</a>
-    <nav class="nav__links" aria-label="Main">
+    <div class="nav__right">
+      <nav class="nav__links" id="site-nav" aria-label="Main">
       <a class="nav__opt" href="#about">About</a>
       <a class="nav__opt" href="#work">Work</a>
       <a class="nav__opt" href="#experience">Experience</a>
       <a class="nav__opt" href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
   </div>
 </header>
 
@@ -100,13 +107,13 @@
       </dl>
     </div>
     <figure class="fig">
-      <div class="shot shot--activity" data-slot="crm-activity" data-kind="product" data-alt="CRM activity log"><img src="images/screens/crm/activity.png" width="2340" height="1120" alt="CRM activity log recording stage changes and field updates with user and time" loading="lazy"></div>
+      <div class="shot shot--activity" data-slot="crm-activity" data-kind="product" data-alt="CRM activity log"><img class="only-desk" src="images/screens/crm/activity.png" width="2340" height="1120" alt="CRM activity log recording stage changes and field updates with user and time" loading="lazy"><img class="only-phone" src="images/screens/crm/activity-phone.png" width="940" height="800" alt="CRM activity log recording stage changes and field updates with user and time" loading="lazy"></div>
       <figcaption>Every stage change and field update is logged against a user and a time.</figcaption>
     </figure>
   </div>
   <div class="container crm-full">
     <figure class="fig">
-      <div class="shot shot--screen" data-slot="crm-dashboard" data-kind="product" data-alt="CRM management dashboard"><img src="images/screens/crm/dashboard.png" width="2880" height="1800" alt="AGL CRM dashboard with pipeline stages, totals and forecast" loading="lazy"></div>
+      <div class="shot shot--screen" data-slot="crm-dashboard" data-kind="product" data-alt="CRM management dashboard"><img class="only-desk" src="images/screens/crm/dashboard.png" width="2880" height="1800" alt="AGL CRM dashboard with pipeline stages, totals and forecast" loading="lazy"><img class="only-phone" src="images/screens/crm/dashboard-phone.png" width="940" height="800" alt="AGL CRM dashboard totals and pipeline stages" loading="lazy"></div>
       <figcaption>The real CRM, run with sample leads. Client records stay private. <a href="images/screens/crm/dashboard.png">Open full size</a></figcaption>
     </figure>
   </div>
@@ -252,6 +259,18 @@ document.querySelectorAll('[data-switch]').forEach((root) => {
   });
   show(tabs[0]);
 });
+const root = document.documentElement, themeBtn = document.querySelector('.theme-toggle');
+const labelTheme = () => themeBtn.setAttribute('aria-label', root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+const storedTheme = () => { try { return localStorage.getItem('theme'); } catch (e) { return null; } };
+const setTheme = (t) => { root.classList.add('theme-anim'); root.dataset.theme = t; labelTheme(); setTimeout(() => root.classList.remove('theme-anim'), 320); };
+themeBtn.addEventListener('click', () => { const t = root.dataset.theme === 'dark' ? 'light' : 'dark'; setTheme(t); try { localStorage.setItem('theme', t); } catch (e) {} });
+matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => { if (!storedTheme()) setTheme(e.matches ? 'light' : 'dark'); });
+labelTheme();
+const navToggle = document.querySelector('.nav__toggle'), siteNav = document.getElementById('site-nav');
+const setNav = (open) => { siteNav.classList.toggle('is-open', open); navToggle.setAttribute('aria-expanded', open); };
+navToggle.addEventListener('click', () => setNav(!siteNav.classList.contains('is-open')));
+siteNav.addEventListener('click', (e) => { if (e.target.closest('a')) setNav(false); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setNav(false); });
 const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
 document.querySelectorAll('main .container > *').forEach((el) => {
   el.setAttribute('data-reveal', '');
