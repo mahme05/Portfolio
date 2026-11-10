@@ -25,7 +25,7 @@ colors:
   page-light: "#ffffff"
   page-dark: "#0f1726"
   card-light: "#ffffff"
-  card-dark: "#1a2539"
+  card-dark: "#111a2c"
   panel-light: "#eaf2fa"
   panel-dark: "#1c2a42"
   line-light: "#d6e0ea"
@@ -275,7 +275,7 @@ A cool sky-and-navy paper palette with one warm accent, defined per mode in the 
 ### Neutral
 - **Page** (light #ffffff, dark #0f1726): Default background, and the parts list and contact panels set on the field.
 - **Panel** (light #eaf2fa, dark #1c2a42): Sub-assembly panels, status and tool chips, callouts, image wells, and the tinted band section.
-- **Card** (light #ffffff, dark #1a2539): Parts and pipeline cards nested on a panel.
+- **Card** (light #ffffff, dark #111a2c): Parts and pipeline cards nested on a panel.
 - **Line** (light #d6e0ea, dark #33435f): Every rule and divider.
 - **Ink** (light #14233b, dark #f2f5fa): Headlines and primary text.
 - **Ink Soft** (light #3a4a61, dark #c8d2e2): Lead and running text.

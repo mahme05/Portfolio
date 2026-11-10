@@ -398,7 +398,7 @@
       "card-dark": {
         "role": "neutral",
         "displayName": "Deep Card",
-        "canonical": "#1a2539",
+        "canonical": "#111a2c",
         "mode": "dark",
         "token": "--color-card",
         "tonalRamp": [
