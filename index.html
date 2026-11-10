@@ -211,11 +211,12 @@
   <div class="container split split--contact">
     <div class="stack">
       <h2>Reach me directly</h2>
-      <p class="lead">Email or message me on LinkedIn.</p>
+      <p class="lead">Email, call or message me on LinkedIn.</p>
       <div class="actions"><a class="btn" href="Mahmood_Abdul_Razak_CV.pdf" download>Download CV</a></div>
     </div>
     <dl class="contact">
       <div><dt>Email</dt><dd><a href="mailto:mahmoodar305@gmail.com">mahmoodar305@gmail.com</a></dd></div>
+      <div><dt>Phone</dt><dd><a href="tel:+919544499312">+91 95444 99312</a></dd></div>
       <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/mahmood-abdul-razak-a044a8321">mahmood-abdul-razak</a></dd></div>
       <div><dt>GitHub</dt><dd><a href="https://github.com/mahme05">mahme05</a></dd></div>
     </dl>
@@ -250,6 +251,12 @@ document.querySelectorAll('[data-switch]').forEach((root) => {
     });
   });
   show(tabs[0]);
+});
+const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+document.querySelectorAll('main .container > *').forEach((el) => {
+  el.setAttribute('data-reveal', '');
+  el.style.setProperty('--i', Math.min([...el.parentNode.children].indexOf(el), 3));
+  io.observe(el);
 });</script>
 </body>
 </html>

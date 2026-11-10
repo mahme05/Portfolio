@@ -166,6 +166,13 @@ html:not(.js) .app + .app { margin-top: var(--space-2xl); }
 .chips li { padding: var(--space-sm) var(--space-md); border: var(--rule-hair) solid var(--color-rule-2); border-radius: var(--radius-pill); background: var(--color-paper-2); font-size: var(--text-lg); font-weight: 500; }
 .also-tools { margin-top: var(--space-lg); color: var(--color-muted); }
 
+html { scroll-behavior: smooth; }
+.js [data-reveal] { opacity: 0; transform: translateY(var(--space-md)); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); transition-delay: calc(var(--i, 0) * 70ms); }
+.js [data-reveal].is-in { opacity: 1; transform: none; }
+.app { animation: app-in var(--dur-long) var(--ease-out); }
+@keyframes app-in { from { opacity: 0; transform: translateY(var(--space-xs)); } }
+@media (prefers-reduced-motion: reduce) { .js [data-reveal] { opacity: 1; transform: none; transition: none; } .app { animation: none; } }
+
 @media (max-width: 60rem) {
   .hero { min-height: 0; padding-block: var(--space-2xl); }
   .split, .split--even, .split--contact, .head-split, .app, .about { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
