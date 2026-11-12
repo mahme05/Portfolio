@@ -19,10 +19,11 @@
 <script>(function () { var r = document.documentElement, t = null; try { t = localStorage.getItem('theme'); } catch (e) {} r.dataset.theme = (t === 'light' || t === 'dark') ? t : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'); r.classList.add('js'); })();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;800&family=Figtree:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
+<!-- Hello, source reader. This page hides a few easter eggs. Try clicking the photo first. -->
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <div class="container nav__bar">
@@ -65,8 +66,8 @@
 <section class="page" id="about">
   <div class="container about">
     <figure class="portrait">
-      <img src="images/portrait.jpg" width="530" height="662" alt="Mahmood Abdul Razak smiling at a wooden table outdoors in the evening" loading="lazy">
-      <p class="bubble">Hi, I’m Mahmood</p>
+      <button class="portrait__btn" type="button" aria-label="Say something else"><img src="images/portrait.jpg" width="530" height="662" alt="Mahmood Abdul Razak smiling at a wooden table outdoors in the evening" loading="lazy"></button>
+      <p class="bubble" aria-live="polite">Hi, I’m Mahmood</p>
     </figure>
     <div class="about__text">
       <h2>Turning <mark class="hl">pain points</mark> into software people rely on daily</h2>
@@ -119,7 +120,7 @@
       <div class="build__title"><h2>Live apps you can open now</h2><p class="lead">Try them yourself. The web apps run on React, Supabase and Vercel.</p></div>
       <span class="status">Live</span>
     </header>
-    <ol class="models"><li><figure><div class="shot shot--screen"><img src="images/screens/hasbi/screen-home-desktop.png" width="2880" height="1800" alt="Home page of the Hasbi Family Platform" loading="lazy"></div></figure><div class="app__text"><h3>Hasbi Family Platform</h3><p>A private family site with a family tree, a cloud photo gallery and role-based access. I designed, built and launched it.</p><p class="stack-line">React, Supabase, Vercel</p><a href="https://hasbi-website-beta.vercel.app">Open Hasbi</a></div></li><li><figure><div class="shot shot--screen"><img src="images/screens/coachquest/screen-home-desktop.png" width="2880" height="1800" alt="CoachQuest landing page" loading="lazy"></div></figure><div class="app__text"><h3>CoachQuest</h3><p>Turns coaching programs into a game with points, streaks, levels and leaderboards.</p><p class="stack-line">React, Supabase, Vercel</p><a href="https://coachquest.trialpath.org">Open CoachQuest</a></div></li><li><figure><div class="shot shot--screen"><img src="images/screens/career/screen-home-desktop.png" width="2880" height="1800" alt="Career Assessment landing page with plans and a sample tax invoice" loading="lazy"></div></figure><div class="app__text"><h3>Career Assessment</h3><p>Students take an aptitude and career test and get a PDF report.</p><p class="stack-line">React, Supabase, Vercel</p><a href="https://career-assessment-pay.vercel.app/">Open Career Assessment</a></div></li></ol>
+    <ol class="models"><li><figure><a class="shot shot--screen" href="https://hasbi-website-beta.vercel.app" tabindex="-1" aria-hidden="true"><img src="images/screens/hasbi/screen-home-desktop.png" width="2880" height="1800" alt="Home page of the Hasbi Family Platform" loading="lazy"></a></figure><div class="app__text"><h3>Hasbi Family Platform</h3><p>A private site for my family, with a family tree, a cloud photo gallery and role-based access. As the family’s resident techie, I designed, built and launched it.</p><p class="stack-line">React, Supabase, Vercel</p><a href="https://hasbi-website-beta.vercel.app">Open Hasbi</a></div></li><li><figure><a class="shot shot--screen" href="https://coachquest.trialpath.org" tabindex="-1" aria-hidden="true"><img src="images/screens/coachquest/screen-home-desktop.png" width="2880" height="1800" alt="CoachQuest landing page" loading="lazy"></a></figure><div class="app__text"><h3>CoachQuest</h3><p>Turns coaching programs into a game with points, streaks, levels and leaderboards.</p><p class="stack-line">React, Supabase, Vercel</p><a href="https://coachquest.trialpath.org">Open CoachQuest</a></div></li><li><figure><a class="shot shot--screen" href="https://career-assessment-pay.vercel.app/" tabindex="-1" aria-hidden="true"><img src="images/screens/career/screen-home-desktop.png" width="2880" height="1800" alt="Career Assessment landing page with plans and a sample tax invoice" loading="lazy"></a></figure><div class="app__text"><h3>Career Assessment</h3><p>Students take an aptitude and career test and get a PDF report.</p><p class="stack-line">React, Supabase, Vercel</p><a href="https://career-assessment-pay.vercel.app/">Open Career Assessment</a></div></li></ol>
     <div class="also">
       <h3>Also built</h3>
       <ul class="rows">
@@ -216,6 +217,83 @@ siteNav.addEventListener('click', (e) => { if (e.target.closest('a')) setNav(fal
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setNav(false); });
 const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -12% 0px' });
 document.querySelectorAll('.assemble').forEach((el) => io.observe(el));
+document.querySelectorAll('.cover__text > *, .box li, .about > *, .build__head, .steps > li, .finished, .crm-more > *, .models > li, .rows li, .scale, .flow li, .band__note, .section-head, .timeline li, .creds > div, .tools li, .tools__more, .close__text > *, .contact div').forEach((el) => {
+  el.classList.add('rv'); el.style.setProperty('--i', Math.min([...el.parentNode.children].indexOf(el), 8)); io.observe(el);
+});
+console.log('%cReading the source? Email me, we’ll get along: mahmoodar305@gmail.com', 'font: 600 14px system-ui; color: #ff8f7a');
+const bubble = document.querySelector('.bubble'), still = matchMedia('(prefers-reduced-motion: reduce)');
+const spring = 'cubic-bezier(0.34, 1.56, 0.64, 1)';
+const move = (el, frames, opts) => { if (!still.matches) el.animate(frames, { easing: spring, ...opts }); };
+const say = (t) => { bubble.textContent = t; move(bubble, [{ transform: 'scale(0.5) rotate(-6deg)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 450 }); };
+const unlock = () => {
+  const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); document.body.append(t);
+  t.innerHTML = '<p><strong>3 easter eggs found.</strong> Bonus unlocked: see how this page is built.</p><button class="btn btn--primary" type="button" aria-pressed="false">Blueprint mode</button><button class="icon-btn" type="button" aria-label="Close">×</button>';
+  const [bp, close] = t.querySelectorAll('button');
+  bp.addEventListener('click', () => bp.setAttribute('aria-pressed', root.classList.toggle('blueprint')));
+  close.addEventListener('click', () => t.remove());
+  move(t, [{ transform: 'translateY(140%)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 650 });
+};
+const eggs = new Set();
+const found = (egg) => { eggs.add(egg); if (eggs.size === 3) unlock(); };
+
+const lines = ['Hi, I’m Mahmood', 'Yes, that’s a real smile', 'Resident techie of my family', 'Ask me about the CRM', '0.76 TB on 2 GB. Ask me how.', 'Got a slow spreadsheet?', 'Still clicking?', 'Okay, you found the easter egg', 'Fine. Now go read my work.'];
+let said = 0;
+const hour = new Date().getHours();
+if (hour >= 23 || hour < 5) { bubble.textContent = 'Up late too?'; found('night'); }
+document.querySelector('.portrait__btn').addEventListener('click', () => { say(lines[++said % lines.length]); found('photo'); });
+
+document.querySelector('.box__count').addEventListener('click', () => {
+  document.querySelectorAll('.box li').forEach((li, i) => move(li, [
+    { transform: 'none', easing: 'ease-out' },
+    { transform: `translate(${Math.random() * 40 - 20}px, ${Math.random() * 30 - 15}px) rotate(${Math.random() * 16 - 8}deg)`, offset: 0.3, easing: spring },
+    { transform: 'none' }], { duration: 900, delay: i * 50, easing: 'linear' }));
+  found('shake');
+});
+
+let flips = [];
+themeBtn.addEventListener('click', () => {
+  const now = Date.now(); flips = flips.filter((t) => now - t < 3000).concat(now);
+  if (flips.length >= 5) { flips = []; say('Make up your mind.'); found('theme'); }
+});
+
+const konami = 'arrowup arrowup arrowdown arrowdown arrowleft arrowright arrowleft arrowright b a';
+let keys = [];
+document.addEventListener('keydown', (e) => {
+  keys = keys.concat((e.key || '').toLowerCase()).slice(-10);
+  if (keys.join(' ') !== konami) return;
+  keys = [];
+  document.querySelectorAll('.build__num').forEach((n) => move(n, [{ transform: 'rotate(0)' }, { transform: 'rotate(360deg)' }], { duration: 900 }));
+  document.querySelectorAll('.flow .mark, .scale span').forEach((el) => {
+    if (el.dataset.was) { el.textContent = el.dataset.was; delete el.dataset.was; }
+    else if (el.textContent.includes('0.76 TB')) { el.dataset.was = el.textContent; el.textContent = el.textContent.replace('0.76 TB', 'a lot of bytes'); }
+  });
+  found('konami');
+});
+
+const hl = document.querySelector('.hl');
+const swapText = async (el, t) => {
+  if (still.matches) { el.textContent = t; return; }
+  await el.animate([{ color: 'transparent' }], { duration: 220, easing: 'ease-in' }).finished;
+  el.textContent = t;
+  await el.animate([{ color: 'transparent' }, {}], { duration: 320, easing: 'ease-out' }).finished;
+};
+hl.addEventListener('dblclick', () => {
+  getSelection().removeAllRanges();
+  if (hl.textContent !== 'pain points' || hl.getAnimations().length) return;
+  swapText(hl, 'spreadsheets').then(() => setTimeout(() => swapText(hl, 'pain points'), 2500));
+  found('swap');
+});
+
+document.querySelectorAll('.page').forEach((pg) => pg.addEventListener('click', (e) => {
+  // ponytail: ::after takes no events, so hit-test the folio's corner; make it a real element if the folio moves
+  const r = pg.getBoundingClientRect();
+  if (e.target !== pg || e.clientX < r.right - 140 || e.clientY < r.bottom - 64) return;
+  const bounce = () => move(document.querySelector('.cover__grid'), [{ transform: 'none' }, { transform: 'translateY(-28px)' }, { transform: 'none' }], { duration: 700 });
+  found('folio');
+  if (scrollY === 0) return bounce();
+  addEventListener('scrollend', bounce, { once: true });
+  scrollTo({ top: 0, behavior: still.matches ? 'auto' : 'smooth' });
+}));
 </script>
 </body>
 </html>

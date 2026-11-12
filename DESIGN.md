@@ -44,10 +44,10 @@ typography:
     lineHeight: 1
     letterSpacing: "-0.025em"
   numeral:
-    fontFamily: "Gabarito, ui-rounded, system-ui, sans-serif"
+    fontFamily: "DM Serif Display, Georgia, serif"
     fontSize: "clamp(4rem, 8vw, 7.5rem)"
-    fontWeight: 800
-    lineHeight: 0.85
+    fontWeight: 400
+    lineHeight: 0.8
   headline:
     fontFamily: "Gabarito, ui-rounded, system-ui, sans-serif"
     fontSize: "clamp(2.25rem, 3vw + 1rem, 4rem)"
@@ -296,7 +296,7 @@ A cool sky-and-navy paper palette with one warm accent, defined per mode in the 
 **Character:** Gabarito is a rounded, friendly grotesk that does the booklet's shouting in numerals and headlines. Figtree is a clean, quiet sans for reading. The two are close enough in spirit to sit together without strain.
 
 ### Hierarchy
-- **Numeral** (800, clamp 4rem to 7.5rem, 0.85): The large tomato build number that heads each build.
+- **Numeral** (DM Serif Display 400, clamp 4rem to 7.5rem, 0.8): The large tomato build number that heads each build. The one serif on the page, a printed-booklet accent against the rounded sans.
 - **Display** (800, clamp 3rem to 6rem, 1, -0.025em): The cover headline only.
 - **Headline** (700, clamp 2.25rem to 4rem, 1.08, -0.02em): Section headings.
 - **Figure** (800, clamp 2.5rem to 3.5rem, 1): Automatic step numbers inside panels.
@@ -312,7 +312,7 @@ A cool sky-and-navy paper palette with one warm accent, defined per mode in the 
 ### Named Rules
 **The No Monospace Rule.** Monospace never appears, including for code names, dates and figures. Columns of numbers use tabular numerals from Gabarito or Figtree.
 
-**The Numeral Leads Rule.** A build or step is identified by a large numeral in Gabarito, generated in order, before any heading competes with it.
+**The Numeral Leads Rule.** A build or step is identified by a large numeral (DM Serif Display for builds, Gabarito for steps), generated in order, before any heading competes with it.
 
 ## Layout
 
